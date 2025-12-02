@@ -74,3 +74,43 @@ updates:
       docs:
         patterns:
           - "*"
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /internal/packagejson/testdata
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /internal/pipe/docker/testdata
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /internal/pipe/docker/v2/testdata
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /internal/pipe/ko/testdata
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/pipe/ko/testdata/app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/pipe/universalbinary/testdata/fake
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /www
+    schedule:
+      interval: daily
